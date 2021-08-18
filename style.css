@@ -1,0 +1,274 @@
+body{
+    background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/38094b95235473.5e92ecc4409a8.gif");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: #2f3136;
+    overflow: hidden;
+}
+
+.container{
+    margin-top: 10%;
+}
+
+.container_{
+    margin-top: 5%;
+    border-radius: 8px;
+    padding: 10px;
+    min-width: 336px;
+    background-color: #36393ff1;
+    transition: transform 0.3s;
+}
+
+.rounded-circle{
+    width: 125px;
+    display: inline-block;
+}
+
+.username{
+    color: white;
+    font-size: 13pt;
+}
+.discrim{
+    color: #b9bbbe;
+    line-height: 20px;
+    font-size: 16px;
+}
+#header{
+    margin-left: 16px;
+    display: inline-block;
+    font-size: 18px;
+}
+#dstag{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.icon0{
+    background-image: url(https://discord.com/assets/473dadec13ab7e90e209cc60fccb31c5.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50%;
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+.icon1{
+    background-image: url(https://discord.com/assets/995ecfdbdf94ad84dd4d802c104e4630.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50%;
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+.icon2{
+    background-image: url(https://discord.com/assets/e04ce699dcd2fd50d352a384511687a9.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50%;
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+.icon3{
+    background-image: url(https://discord.com/assets/dd50d32cf4fee241b2fa022d8c0435ae.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50%;
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+.account{
+    flex: 0 1 auto;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    display: flex;
+    width: 100%;
+    height: 48px;
+    background-color: transparent;
+    margin-top: 16px;
+    border-radius: 3px;
+    border: 1px solid;
+    border-color: hsla(0, 0%, 100%, 0.06);
+    padding: 8px 14px 8px 8px;
+    align-items: center;
+    vertical-align: baseline;
+    position: relative;
+}
+
+.nav{
+    margin-top: 16px;
+    border-color: hsla(0, 0%, 100%, 0.06);
+    padding-bottom: 5px;
+}
+.account img{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    vertical-align: baseline;
+}
+.account span{
+    align-items: center;
+    vertical-align: baseline;
+    color: #dcddde;
+    line-height: 1;
+}
+svg{
+    color: #b9bbbe;
+    width: 18px;
+    height: 18px;
+    transition: 0.3s;
+}
+svg:hover{
+    color: #ebebeb;
+}
+.account a{
+    position: absolute;
+    right: 14px;
+}
+
+
+.loft_menu {
+    padding: 10px;
+    background-color: rgb(73,75,84);
+    border-radius: 10px;
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    right: 10px;
+    bottom: 10px;
+}
+
+.loft_menu_header {
+    height: 50px;
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 14px;
+    
+}
+
+.relativo {
+    position: relative;
+}
+
+.img_menu {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: auto;
+    height: auto;
+}
+
+.text_menu_body{
+    position: absolute;
+    top: 50px;
+    left: 70px;
+}
+
+.text_menu{
+    position: absolute;
+    font-size: 14pt;
+    top: 0px;
+    left: 90px;
+    color: #ebebeb;
+}
+
+.Live{
+    position: absolute;
+    left: 0px;
+    top: 25px;
+    color: red;
+    font-size: 12pt;
+}
+
+/* imput de play */
+
+
+.form-check {
+	 position: relative;
+	 display: block;
+	 margin-bottom: 0.75rem;
+}
+ .form-check-toggle {
+	 position: relative;
+	 padding-left: 0;
+	 line-height: 30px;
+}
+ .form-check-toggle input {
+	 display: block;
+	 position: absolute;
+	 top: 0;
+	 right: 0;
+	 bottom: 0;
+	 left: 0;
+	 width: 0%;
+	 height: 0%;
+	 margin: 0;
+	 cursor: pointer;
+	 opacity: 0;
+	 filter: alpha(opacity=0);
+}
+ .form-check-toggle input + span {
+	 cursor: pointer;
+	 user-select: none;
+	 height: 30px;
+	 margin-left: 70px;
+	 display: block;
+}
+ .form-check-toggle input + span:before {
+	 content: '';
+	 position: absolute;
+	 left: 0;
+	 display: inline-block;
+	 height: 25px;
+	 width: 60px;
+	 background: rgb(122, 122, 122);
+	 border: solid 1px #969696;
+	 transition: background 0.3s ease-in-out, border-color 0.3s ease-in-out;
+	 border-radius: 15px;
+}
+ .form-check-toggle input + span:after {
+	 width: 25px;
+	 height: 25px;
+	 margin-top: 1px;
+	 margin-left: 1px;
+	 border-radius: 50%;
+	 position: absolute;
+	 left: 0;
+	 top: 0;
+	 display: block;
+	 background: #fff;
+	 transition: margin-left 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+	 text-align: center;
+	 font-weight: bold;
+	 content: '';
+	 box-shadow: 0 0 2px rgba(0, 0, 0, 0.2), 0 0 5px rgba(0, 0, 0, 0.05);
+}
+ .form-check-toggle input:checked + span:after {
+	 content: '';
+	 margin-left: 35px;
+	 box-shadow: none;
+}
+ .form-check-toggle input:checked + span:before {
+	 background-color: #88ff0073;
+	 border-color: #86be4e;
+	 transition: background 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+ 

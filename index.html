@@ -1,0 +1,245 @@
+<html>
+
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<head>
+    <meta charsete="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link rel="icon" href="https://cdn.glitch.com/8401473b-bd29-4f1f-b902-24f240b20d6b%2Femote.png?v=1576050717648"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <script>let [avatarURL, usernameStr, discrimStr] = ["224d58309d570fe1dd4b0bac748b360a.png?size=128", "Diego Horvatti", "5898"];</script>
+    <script>let [avatarURL_2, usernameStr_2, discrimStr_2] = ["17ca0716b9407856221a8430d1ad4f71.png?size=128", "STAKE2", "1778"];</script>
+    <script src="client.js"></script>
+    <title>my site</title>
+</head>
+
+<body>
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
+    
+        body {
+    
+            justify-content: center;
+            text-align: center;
+        }
+    
+        .card_img_parallax {
+            position: relative;
+            height: 40%;
+            top: 10%;
+        }
+    
+        .cards_parallax {
+            background: #181a1b;
+            border-radius: 15px;
+            box-shadow: 0px 10px 20px 20px rgba(0, 0, 0, 0.17);
+            perspective: 1800px;
+            text-align: left;
+            transform-origin: 50% 50%;
+            transform-style: preserve-3d;
+            transform: rotateX(11deg) rotateY(16.5deg);
+        }
+    
+    
+        .card_parallax {
+            background-attachment: fixed;
+            background-image: url(../img/fundo.png);
+            border-radius: 15px;
+            box-shadow: 5px 5px 20px -5px rgba(0, 0, 0, 0.6);
+            cursor: pointer;
+            display: inline-block;
+            height: 250px;
+            perspective: 1200px;
+            position: relative;
+            transform-style: preserve-3d;
+            transform: translatez(35px);
+            transition: transform 200ms ease-out;
+            width: 175px;
+            text-align: center;
+        }
+    
+        .card_title_parallax {
+            color: #fff;
+            font-size: 18px;
+            font-weight: 700;
+            padding: 0 10px;
+            margin-bottom: 3px;
+        }
+    
+        .card_text_parallax {
+            align-items: center;
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.55) 100%);
+            bottom: 0;
+            display: flex;
+            flex-direction: column;
+            height: 70px;
+            justify-content: center;
+            position: absolute;
+            width: 100%;
+            z-index: 2;
+        }
+    </style>
+
+
+    <div class="container" data-tilt>
+        <div class="row fundo">
+            <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                <div class="container_"  data-tilt>
+                    <img class="rounded-circle" src="https://cdn.discordapp.com/embed/avatars/0.png" id="avatar"/>
+                    <div id="header">
+                        <div id="dstag">
+                            <span id="username" class="username"></span><span id="discrim" class="discrim"></span><span class="icon1"></span><span class="icon2"></span><span class="icon3"></span>
+                        </div>
+                        
+                    </div>
+
+                    <ul class="nav nav-tabs nav-justified" role="tablist"></ul>
+
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="accounts">
+                            <div class="account">
+                                <img src="https://canary.discord.com/assets/5d69e29f0d71aaa04ed9725100199b4e.png"/>
+                                <span>Diego Horvatti</span>
+                                <a href="https://github.com/DIEGO-HORVATTI" target="_blank">
+                                    <svg name="Nova_Launch" aria-hidden="false" width="24" height="24" viewBox="0 0 24 24">
+                                        <path fill="currentColor" d="M10 5V3H5.375C4.06519 3 3 4.06519 3 5.375V18.625C3 19.936 4.06519 21 5.375 21H18.625C19.936 21 21 19.936 21 18.625V14H19V19H5V5H10Z"></path>
+                                        <path fill="currentColor" d="M21 2.99902H14V4.99902H17.586L9.29297 13.292L10.707 14.706L19 6.41302V9.99902H21V2.99902Z"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="account">
+                                <img src="https://canary.discordapp.com/assets/f0655521c19c08c4ea4e508044ec7d8c.png"/>
+                                <span>Diego Horvatti</span>
+                                <a href="https://open.spotify.com/user/2142leo4dahsog5u7iwwyccci" target="_blank">
+                                    <svg name="Nova_Launch" aria-hidden="false" width="24" height="24" viewBox="0 0 24 24">
+                                        <path fill="currentColor" d="M10 5V3H5.375C4.06519 3 3 4.06519 3 5.375V18.625C3 19.936 4.06519 21 5.375 21H18.625C19.936 21 21 19.936 21 18.625V14H19V19H5V5H10Z"></path>
+                                        <path fill="currentColor" d="M21 2.99902H14V4.99902H17.586L9.29297 13.292L10.707 14.706L19 6.41302V9.99902H21V2.99902Z"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                <div class="container_"  data-tilt>
+                    <img class="rounded-circle" src="https://cdn.discordapp.com/embed/avatars/0.png" id="avatar_2"/>
+                    <div id="header">
+                        <div id="dstag">
+                            <span id="username_2" class="username"></span><span id="discrim_2" class="discrim"></span><span class="icon0"></span><span class="icon2"></span></span>
+                        </div>
+                
+                    </div>
+                
+                    <ul class="nav nav-tabs nav-justified" role="tablist"></ul>
+                
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="accounts">
+                            <div class="account">
+                                <img src="https://canary.discord.com/assets/5d69e29f0d71aaa04ed9725100199b4e.png" />
+                                <span>stake2</span>
+                                <a href="https://github.com/DIEGO-HORVATTI" target="_blank">
+                                    <svg name="Nova_Launch" aria-hidden="false" width="24" height="24" viewBox="0 0 24 24">
+                                        <path fill="currentColor"
+                                            d="M10 5V3H5.375C4.06519 3 3 4.06519 3 5.375V18.625C3 19.936 4.06519 21 5.375 21H18.625C19.936 21 21 19.936 21 18.625V14H19V19H5V5H10Z">
+                                        </path>
+                                        <path fill="currentColor"
+                                            d="M21 2.99902H14V4.99902H17.586L9.29297 13.292L10.707 14.706L19 6.41302V9.99902H21V2.99902Z">
+                                        </path>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="account">
+                                <img src="https://canary.discordapp.com/assets/f0655521c19c08c4ea4e508044ec7d8c.png" />
+                                <span>stake2</span>
+                                <a href="https://open.spotify.com/user/2142leo4dahsog5u7iwwyccci" target="_blank">
+                                    <svg name="Nova_Launch" aria-hidden="false" width="24" height="24" viewBox="0 0 24 24">
+                                        <path fill="currentColor"
+                                            d="M10 5V3H5.375C4.06519 3 3 4.06519 3 5.375V18.625C3 19.936 4.06519 21 5.375 21H18.625C19.936 21 21 19.936 21 18.625V14H19V19H5V5H10Z">
+                                        </path>
+                                        <path fill="currentColor"
+                                            d="M21 2.99902H14V4.99902H17.586L9.29297 13.292L10.707 14.706L19 6.41302V9.99902H21V2.99902Z">
+                                        </path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="player"></div>
+
+    <div class="loft_menu">
+        <div class="loft_menu_header">
+            <div class="relativo">
+                <img class="img_menu" src="https://yt3.ggpht.com/ytc/AKedOLTkvv3TyNLJYEWXsPdCsgg8fvSn9-Oj65GBhkAiEg=s68-c-k-c0x00ffffff-no-rj" height="50px">
+                <div class="text_menu">Lofy&nbspGir <span class="Live">LIVE</span></div>
+                    <div class="text_menu_body">
+                        <div class="form-check">
+                            <label class="form-check-label form-check-toggle">
+                                <input id="input_1" class="form-check-input" type="checkbox" value="true" checked/><span></span>
+                            </label>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+    <script>
+         
+        var tag = document.createElement('script');
+
+        tag.src = "https://www.youtube.com/iframe_api";
+        var firstScriptTag = document.getElementsByTagName('script')[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+        
+        var player;
+        function onYouTubeIframeAPIReady() {
+            player = new YT.Player('player', {
+                height: '0',
+                width: '0',
+                videoId: '5qap5aO4i9A',
+                events: {
+                    'onReady': onPlayerReady,
+                    'onStateChange': onPlayerStateChange
+                }
+            });
+        }
+
+        function onPlayerReady(event) {
+            setTimeout(stopVideo, 60000000);
+            event.target.playVideo();
+        }
+
+        var done = false;
+        function onPlayerStateChange(event) {
+            if (event.data == YT.PlayerState.PLAYING && !done) {
+                done = true;
+            }
+        }
+        function stopVideo() {
+            player.stopVideo();
+        }
+        function playVideo() {
+                player.playVideo();
+            }
+    </script>
+
+    <script>
+        var VanillaTilt = function () { "use strict"; class t { constructor(t, e = {}) { if (!(t instanceof Node)) throw "Can't initialize VanillaTilt because " + t + " is not a Node."; this.width = null, this.height = null, this.left = null, this.top = null, this.transitionTimeout = null, this.updateCall = null, this.updateBind = this.update.bind(this), this.element = t, this.settings = this.extendSettings(e), this.reverse = this.settings.reverse ? -1 : 1, this.addEventListeners() } addEventListeners() { this.onMouseEnterBind = this.onMouseEnter.bind(this), this.onMouseMoveBind = this.onMouseMove.bind(this), this.onMouseLeaveBind = this.onMouseLeave.bind(this), this.element.addEventListener("mouseenter", this.onMouseEnterBind), this.element.addEventListener("mousemove", this.onMouseMoveBind), this.element.addEventListener("mouseleave", this.onMouseLeaveBind) } removeEventListeners() { this.element.removeEventListener("mouseenter", this.onMouseEnterBind), this.element.removeEventListener("mousemove", this.onMouseMoveBind), this.element.removeEventListener("mouseleave", this.onMouseLeaveBind) } destroy() { this.removeEventListeners(), this.element.vanillaTilt = null, delete this.element.vanillaTilt, this.element = null } onMouseEnter(t) { this.updateElementPosition(), this.element.style.willChange = "transform", this.setTransition() } onMouseMove(t) { null !== this.updateCall && cancelAnimationFrame(this.updateCall), this.event = t, this.updateCall = requestAnimationFrame(this.updateBind) } onMouseLeave(t) { this.setTransition(), this.settings.reset && this.reset() } reset() { requestAnimationFrame(() => { this.event = { pageX: this.left + this.width / 2, pageY: this.top + this.height / 2 }, this.element.style.transform = "perspective(" + this.settings.perspective + "px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)" }) } getValues() { let t = (this.event.clientX - this.left) / this.width, e = (this.event.clientY - this.top) / this.height; t = Math.min(Math.max(t, 0), 1), e = Math.min(Math.max(e, 0), 1); let i = (this.reverse * (this.settings.max / 2 - t * this.settings.max)).toFixed(2), s = (this.reverse * (e * this.settings.max - this.settings.max / 2)).toFixed(2); return { tiltX: i, tiltY: s, percentageX: 100 * t, percentageY: 100 * e } } updateElementPosition() { let t = this.element.getBoundingClientRect(); this.width = this.element.offsetWidth, this.height = this.element.offsetHeight, this.left = t.left, this.top = t.top } update() { let t = this.getValues(); this.element.style.transform = "perspective(" + this.settings.perspective + "px) rotateX(" + ("x" === this.settings.axis ? 0 : t.tiltY) + "deg) rotateY(" + ("y" === this.settings.axis ? 0 : t.tiltX) + "deg) scale3d(" + this.settings.scale + ", " + this.settings.scale + ", " + this.settings.scale + ")", this.element.dispatchEvent(new CustomEvent("tiltChange", { detail: t })), this.updateCall = null } setTransition() { clearTimeout(this.transitionTimeout), this.element.style.transition = this.settings.speed + "ms " + this.settings.easing, this.transitionTimeout = setTimeout(() => this.element.style.transition = "", this.settings.speed) } extendSettings(t) { let e = { reverse: !1, max: 35, perspective: 1e3, easing: "cubic-bezier(.03,.98,.52,.99)", scale: "1", speed: "300", transition: !0, axis: null, reset: !0 }, i = {}; for (var s in e) if (s in t) i[s] = t[s]; else if (this.element.hasAttribute("data-tilt-" + s)) { let t = this.element.getAttribute("data-tilt-" + s); try { i[s] = JSON.parse(t) } catch (e) { i[s] = t } } else i[s] = e[s]; return i } static init(e, i) { e instanceof Node && (e = [e]), e instanceof NodeList && (e = [].slice.call(e)), e instanceof Array && e.forEach(e => { "vanillaTilt" in e || (e.vanillaTilt = new t(e, i)) }) } } return "undefined" != typeof document && (window.VanillaTilt = t, t.init(document.querySelectorAll("[data-tilt]"))), t }();
+    </script>
+
+    </body>
+
+</html>
